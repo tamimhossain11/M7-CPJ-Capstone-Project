@@ -1,0 +1,279 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.spring.mvc</groupId>
+  <artifactId>ABC</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>ABC Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+    <properties>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    		<email.version>1.16.18</email.version>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <spring.version>5.2.0.RELEASE</spring.version> <!--add this version-->
+    </properties>
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/com.github.gfx.util/weak-identity-hash-map -->
+<dependency>
+    <groupId>com.github.gfx.util</groupId>
+    <artifactId>weak-identity-hash-map</artifactId>
+    <version>2.0.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-test</artifactId>
+    <version>5.3.23</version>
+    <scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>2.0.3</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-jdk14 -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-jdk14</artifactId>
+    <version>2.0.3</version>
+    <scope>test</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context-support</artifactId>
+    <version>5.3.23</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>2.0.3</version>
+    <type>pom</type>
+    <scope>test</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-beans</artifactId>
+    <version>5.3.23</version>
+</dependency>
+
+
+  <!-- https://mvnrepository.com/artifact/org.wisdom-framework/mysql-connector-java -->
+<dependency>
+    <groupId>org.wisdom-framework</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.34_1</version>
+</dependency>
+
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.2</version>
+    <scope>test</scope>
+</dependency>
+
+
+
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>4.0.1</version>
+    <scope>provided</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/javax.inject/javax.inject -->
+<dependency>
+    <groupId>javax.inject</groupId>
+    <artifactId>javax.inject</artifactId>
+    <version>1</version>
+</dependency>
+
+ <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+<dependency>
+    <groupId>org.springframework.data</groupId>
+    <artifactId>spring-data-jpa</artifactId>
+    <version>2.7.3</version>
+</dependency>
+ <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.9.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api -->
+<dependency>
+    <groupId>javax.servlet.jsp</groupId>
+    <artifactId>javax.servlet.jsp-api</artifactId>
+    <version>2.3.3</version>
+    <scope>provided</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
+<dependency>
+    <groupId>com.sun.mail</groupId>
+    <artifactId>javax.mail</artifactId>
+    <version>1.6.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
+<dependency>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-config</artifactId>
+    <version>3.2.0.RELEASE</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/opensymphony/sitemesh -->
+<dependency>
+    <groupId>opensymphony</groupId>
+    <artifactId>sitemesh</artifactId>
+    <version>2.4.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-tx</artifactId>
+    <version>5.3.23</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.3.23</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-orm</artifactId>
+    <version>5.3.23</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>5.3.23</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
+<dependency>
+    <groupId>javax.validation</groupId>
+    <artifactId>validation-api</artifactId>
+    <version>2.0.1.Final</version>
+</dependency>
+
+
+
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.30</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.11.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>5.2.10.Final</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-engine</artifactId>
+    <version>5.9.1</version>
+    <scope>test</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-jdbc</artifactId>
+    <version>5.3.23</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/jakarta.validation/jakarta.validation-api -->
+<dependency>
+    <groupId>jakarta.validation</groupId>
+    <artifactId>jakarta.validation-api</artifactId>
+    <version>3.0.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>6.1.3.Final</version>
+    <type>pom</type>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
+<dependency>
+    <groupId>org.hibernate.javax.persistence</groupId>
+    <artifactId>hibernate-jpa-2.1-api</artifactId>
+    <version>1.0.2.Final</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.3.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+<dependency>
+    <groupId>commons-fileupload</groupId>
+    <artifactId>commons-fileupload</artifactId>
+    <version>1.4</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/commons-fileupload.wso2/commons-fileupload -->
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-aop</artifactId>
+    <version>5.3.23</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+<dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-core</artifactId>
+    <version>4.8.0</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+  <groupId>org.java-websocket</groupId>
+  <artifactId>Java-WebSocket</artifactId>
+  <version>1.4.1</version>
+</dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+     <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.1</version>
+        </plugin>
+    </plugins>
+    <finalName>ABC</finalName>
+  </build>
+</project>

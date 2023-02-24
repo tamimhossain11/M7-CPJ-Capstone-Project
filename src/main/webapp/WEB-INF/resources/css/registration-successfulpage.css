@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.body-option {
+    width:100%;
+    height:100vh;
+    background-color:#0a69ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width:250px;
+    height:300px;
+    background-color:#181818;
+    border-radius:10px;
+    display: flex;
+  
+    justify-content: center;
+    color:#0a69ed;
+    font-size:40px;
+}
+.card:hover{
+    transform: rotate(360deg);
+    transition:1.5s;
+}
